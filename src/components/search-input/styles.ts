@@ -1,20 +1,21 @@
 import { StyleSheet } from "react-native";
+import { tokens } from "../../global/tokens";
 
 export const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "#F5F5F5",
-    borderRadius: 30,
-    paddingVertical: 5,
-    marginVertical: 10,
+    backgroundColor: tokens.colors.gray00,
+    borderRadius: tokens.spacing.Xxl,
+    paddingVertical: tokens.spacing.Sml,
+    marginVertical: tokens.spacing.Md,
   },
   icon: {
-    marginRight: 5,
+    marginRight: tokens.spacing.Sml,
   },
   input: {
     flex: 1,
-    fontSize: 16,
-    color: "#333",
+    fontSize: tokens.typography.h3.fontSize,
+    color: tokens.colors.black,
   },
 });

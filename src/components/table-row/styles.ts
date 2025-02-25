@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
   avatar: {
     width: 40,
     height: 40,
-    borderRadius: 20,
+    borderRadius: tokens.spacing.Xl,
     marginRight: tokens.spacing.Sml,
   },
   name: {

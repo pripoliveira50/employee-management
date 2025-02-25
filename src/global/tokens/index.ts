@@ -13,15 +13,15 @@ export const tokens = {
     fontFamily: "Helvetica",
     h1: {
       fontSize: 20,
-      fontWeight: "600",
+      fontWeight: "bold",
     },
     h2: {
       fontSize: 18,
-      fontWeight: "600",
+      fontWeight: "bold",
     },
     h3: {
       fontSize: 16,
-      fontWeight: "400",
+      fontWeight: "regular",
     },
   },
   spacing: {
