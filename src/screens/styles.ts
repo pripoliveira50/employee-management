@@ -1,16 +1,17 @@
 import { StyleSheet } from "react-native";
+import { tokens } from "../global/tokens";
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
-    backgroundColor: "#FFFFFF",
+    padding: tokens.spacing.Xl,
+    backgroundColor: tokens.colors.white,
   },
   space: {
-    marginVertical: 10,
+    marginVertical: tokens.spacing.Md,
   },
   label: {
     fontWeight: "bold",
-    fontSize: 20,
+    fontSize: tokens.typography.h1.fontSize,
   },
 });
