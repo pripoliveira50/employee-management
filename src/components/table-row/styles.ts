@@ -1,55 +1,56 @@
 import { StyleSheet } from "react-native";
+import { tokens } from "../../global/tokens";
 
 export const styles = StyleSheet.create({
   container: {
     borderWidth: 1,
-    borderRadius: 8,
-    borderColor: "#ccc",
-    marginVertical: 5,
-    backgroundColor: "#fff",
+    borderRadius: tokens.spacing.Md,
+    borderColor: tokens.colors.gray10,
+    marginVertical: tokens.spacing.Sml,
+    backgroundColor: tokens.colors.white,
   },
   row: {
     flexDirection: "row",
     alignItems: "center",
-    padding: 10,
+    padding: tokens.spacing.Md,
   },
   avatar: {
     width: 40,
     height: 40,
     borderRadius: 20,
-    marginRight: 10,
+    marginRight: tokens.spacing.Sml,
   },
   name: {
     flex: 1,
-    fontSize: 16,
-    fontWeight: "bold",
+    fontSize: tokens.typography.h3.fontSize,
+    fontWeight: tokens.typography.h3.fontWeight,
   },
   details: {
-    padding: 10,
+    padding: tokens.spacing.Md,
     borderTopWidth: 1,
-    borderTopColor: "#ccc",
+    borderTopColor: tokens.colors.gray05,
   },
   infoContainer: {
     flexDirection: "column",
-    gap: 5,
+    gap: tokens.spacing.Sml,
   },
   infoRow: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    paddingVertical: 2,
+    paddingVertical: tokens.spacing.Xxs,
     borderBottomWidth: 1,
-    borderBottomColor: "#eee",
+    borderBottomColor: tokens.colors.gray05,
   },
   label: {
-    fontWeight: "bold",
-    fontSize: 14,
+    fontWeight: tokens.typography.h2.fontWeight,
+    fontSize: tokens.typography.h2.fontSize,
   },
   value: {
-    fontWeight: "normal",
+    fontWeight: tokens.typography.h3.fontWeight,
     textAlign: "right",
   },
   space: {
-    marginLeft: 40,
+    marginLeft: tokens.spacing.Xxl,
   },
 });
