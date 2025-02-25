@@ -4,7 +4,7 @@ import { List } from "react-native-paper";
 import { TableRowProps } from "./model";
 import { styles } from "./styles";
 import STRINGS from "./strings";
-import { formatPhoneNumber } from "../../utils/fortmat-telefone-number";
+import { formatPhoneNumber } from "../../utils/format-phone-number";
 
 const TableRow: React.FC<TableRowProps> = ({
   name,
