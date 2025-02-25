@@ -6,10 +6,27 @@ import SearchInput from "@components/search-input";
 import EmployeeTable from "@components/employee-table";
 import Header from "@components/header";
 import { QueryProvider } from "../infra/react-query";
+import {
+  useFonts,
+  Inter_400Regular,
+  Inter_500Medium,
+  Inter_700Bold,
+} from "@expo-google-fonts/inter";
 import { styles } from "./styles";
 import STIRNGS from "./strings";
+import AppLoading from "expo-app-loading";
 
 const App: React.FC = () => {
+  let [fontsLoaded] = useFonts({
+    Inter_Regular: Inter_400Regular,
+    Inter_Medium: Inter_500Medium,
+    Inter_Bold: Inter_700Bold,
+  });
+
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  }
+
   return (
     <QueryProvider>
       <AppContent />

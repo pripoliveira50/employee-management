@@ -19,6 +19,7 @@ export const styles = StyleSheet.create({
     width: tokens.spacing.Xxxl,
   },
   headerText: {
+    fontFamily: tokens.typography.h3.fontFamily,
     fontWeight: tokens.typography.h3.fontWeight,
     fontSize: tokens.typography.h3.fontSize,
   },

@@ -23,7 +23,7 @@ export const styles = StyleSheet.create({
   name: {
     flex: 1,
     fontSize: tokens.typography.h3.fontSize,
-    fontWeight: tokens.typography.h3.fontWeight,
+    fontFamily: tokens.typography.h3.fontFamily,
   },
   details: {
     padding: tokens.spacing.Md,
@@ -43,10 +43,11 @@ export const styles = StyleSheet.create({
     borderBottomColor: tokens.colors.gray05,
   },
   label: {
-    fontWeight: tokens.typography.h2.fontWeight,
+    fontFamily: tokens.typography.h2.fontFamily,
     fontSize: tokens.typography.h2.fontSize,
   },
   value: {
+    fontFamily: tokens.typography.h3.fontFamily,
     fontWeight: tokens.typography.h3.fontWeight,
     textAlign: "right",
   },

@@ -19,6 +19,7 @@ export const styles = StyleSheet.create({
   },
   avatarText: {
     fontSize: tokens.typography.h3.fontSize,
+    fontFamily: tokens.typography.h3.fontFamily,
     fontWeight: tokens.typography.h3.fontWeight,
     color: tokens.colors.black,
   },

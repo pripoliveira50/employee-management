@@ -2,6 +2,10 @@
   "expo": {
     "name": "employee-management",
     "slug": "employee-management",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "plugins": [
+      "expo-font",
+      "expo-asset"
+    ]
   }
 }

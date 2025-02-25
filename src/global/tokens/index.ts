@@ -10,16 +10,18 @@ export const tokens = {
     white: "#FFFFFF",
   },
   typography: {
-    fontFamily: "Helvetica",
     h1: {
+      fontFamily: "Inter_Bold",
       fontSize: 20,
       fontWeight: "bold",
     },
     h2: {
+      fontFamily: "Inter_Medium",
       fontSize: 18,
       fontWeight: "bold",
     },
     h3: {
+      fontFamily: "Inter_Regular",
       fontSize: 16,
       fontWeight: "regular",
     },

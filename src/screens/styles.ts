@@ -11,7 +11,8 @@ export const styles = StyleSheet.create({
     marginVertical: tokens.spacing.Md,
   },
   label: {
-    fontWeight: "bold",
+    fontFamily: tokens.typography.h1.fontFamily,
+    fontWeight: tokens.typography.h1.fontWeight,
     fontSize: tokens.typography.h1.fontSize,
   },
 });
