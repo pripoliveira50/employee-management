@@ -21,26 +21,30 @@ const TableRow: React.FC<TableRowProps> = ({
         style={styles.row}
         onPress={() => setExpanded(!expanded)}>
         <Image source={{ uri: image }} style={styles.avatar} />
-        <View style={{ width: 30, alignItems: "center" }} />
         <Text style={styles.name}>{name}</Text>
         <List.Icon icon={expanded ? "chevron-up" : "chevron-down"} />
       </TouchableOpacity>
 
       {expanded && (
         <View style={styles.details}>
-          <Text style={styles.label}>
-            {STRINGS.ROLE} <Text style={styles.value}>{job}</Text>
-          </Text>
-          <Text style={styles.label}>
-            {STRINGS.ADMISSION_DATE}{" "}
-            <Text style={styles.value}>
-              {new Date(admission_date).toLocaleDateString("pt-BR")}
-            </Text>
-          </Text>
-          <Text style={styles.label}>
-            {STRINGS.PHONE}{" "}
-            <Text style={styles.value}>{formatPhoneNumber(phone)}</Text>
-          </Text>
+          <View style={styles.infoContainer}>
+            <View style={styles.infoRow}>
+              <Text style={styles.label}>{STRINGS.ROLE}</Text>
+              <Text style={styles.value}>{job}</Text>
+            </View>
+
+            <View style={styles.infoRow}>
+              <Text style={styles.label}>{STRINGS.ADMISSION_DATE}</Text>
+              <Text style={styles.value}>
+                {new Date(admission_date).toLocaleDateString("pt-BR")}
+              </Text>
+            </View>
+
+            <View style={styles.infoRow}>
+              <Text style={styles.label}>{STRINGS.PHONE}</Text>
+              <Text style={styles.value}>{formatPhoneNumber(phone)}</Text>
+            </View>
+          </View>
         </View>
       )}
     </View>
