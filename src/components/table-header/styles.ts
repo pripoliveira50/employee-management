@@ -4,10 +4,18 @@ export const styles = StyleSheet.create({
   headerContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
-    padding: 10,
+    alignItems: "center",
+    padding: 16,
     backgroundColor: "#E6E6FA",
     borderTopLeftRadius: 8,
     borderTopRightRadius: 8,
+  },
+  headerContent: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  spacer: {
+    width: 50,
   },
   headerText: {
     fontWeight: "bold",
