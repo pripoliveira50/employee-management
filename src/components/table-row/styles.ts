@@ -49,4 +49,7 @@ export const styles = StyleSheet.create({
     fontWeight: "normal",
     textAlign: "right",
   },
+  space: {
+    marginLeft: 30,
+  },
 });

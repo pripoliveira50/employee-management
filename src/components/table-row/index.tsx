@@ -21,6 +21,7 @@ const TableRow: React.FC<TableRowProps> = ({
         style={styles.row}
         onPress={() => setExpanded(!expanded)}>
         <Image source={{ uri: image }} style={styles.avatar} />
+        <View style={styles.space} />
         <Text style={styles.name}>{name}</Text>
         <List.Icon icon={expanded ? "chevron-up" : "chevron-down"} />
       </TouchableOpacity>
