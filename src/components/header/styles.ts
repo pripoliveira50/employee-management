@@ -1,34 +1,35 @@
 import { StyleSheet } from "react-native";
+import { tokens } from "../../global/tokens";
 
 export const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: 10,
-    backgroundColor: "#fff",
+    padding: tokens.spacing.Md,
+    backgroundColor: tokens.colors.white,
   },
   avatarContainer: {
     width: 40,
     height: 40,
-    borderRadius: 20,
-    backgroundColor: "#F5F5F5",
+    borderRadius: tokens.spacing.Xl,
+    backgroundColor: tokens.colors.gray00,
     justifyContent: "center",
     alignItems: "center",
   },
   avatarText: {
-    fontSize: 14,
-    fontWeight: "bold",
-    color: "#333",
+    fontSize: tokens.typography.h3.fontSize,
+    fontWeight: tokens.typography.h3.fontWeight,
+    color: tokens.colors.black,
   },
   notificationContainer: {
     position: "relative",
   },
   badge: {
     position: "absolute",
-    top: 5,
-    right: 5,
-    backgroundColor: "blue",
-    color: "white",
+    top: tokens.spacing.Xs,
+    right: tokens.spacing.Xs,
+    backgroundColor: tokens.colors.primary,
+    color: tokens.colors.white,
   },
 });
