@@ -26,6 +26,7 @@ const SearchInput: React.FC<SearchInputProps> = ({
         value={query}
         onChangeText={handleChange}
         placeholderTextColor="#999"
+        testID="search-input"
       />
     </View>
   );

@@ -14,7 +14,6 @@ import {
 } from "@expo-google-fonts/inter";
 import { styles } from "./styles";
 import STIRNGS from "./strings";
-import AppLoading from "expo-app-loading";
 
 const App: React.FC = () => {
   let [fontsLoaded] = useFonts({
@@ -24,7 +23,7 @@ const App: React.FC = () => {
   });
 
   if (!fontsLoaded) {
-    return <AppLoading />;
+    return <ActivityIndicator size="large" color="#0000ff" />;
   }
 
   return (

@@ -18,11 +18,17 @@ const TableRow: React.FC<TableRowProps> = ({
   return (
     <View style={styles.container}>
       <TouchableOpacity
+        accessibilityRole="button"
         style={styles.row}
         onPress={() => setExpanded(!expanded)}>
-        <Image source={{ uri: image }} style={styles.avatar} />
+        <Image
+          testID="profile-image"
+          source={{ uri: image }}
+          style={styles.avatar}
+        />
         <View style={styles.space} />
         <Text style={styles.name}>{name}</Text>
+
         <List.Icon icon={expanded ? "chevron-up" : "chevron-down"} />
       </TouchableOpacity>
 
