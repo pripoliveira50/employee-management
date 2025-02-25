@@ -5,20 +5,18 @@ import {
   StyleSheet,
   View,
 } from "react-native";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useForm, Controller } from "react-hook-form";
 import { useEmployeeProvider } from "../infra/hooks/use-employee-provider";
 import SearchInput from "../components/search-input";
 import EmployeeTable from "../components/employee-table";
 import Header from "../components/header";
-
-const queryClient = new QueryClient();
+import { QueryProvider } from "../infra/react-query";
 
 const App: React.FC = () => {
   return (
-    <QueryClientProvider client={queryClient}>
+    <QueryProvider>
       <AppContent />
-    </QueryClientProvider>
+    </QueryProvider>
   );
 };
 
