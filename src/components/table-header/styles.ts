@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
   },
   headerText: {
     fontFamily: tokens.typography.h3.fontFamily,
-    fontWeight: tokens.typography.h3.fontWeight,
+    fontWeight: "bold",
     fontSize: tokens.typography.h3.fontSize,
   },
 });
