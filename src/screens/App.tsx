@@ -1,16 +1,13 @@
 import React from "react";
-import {
-  SafeAreaView,
-  ActivityIndicator,
-  StyleSheet,
-  View,
-} from "react-native";
+import { SafeAreaView, ActivityIndicator, View, Text } from "react-native";
 import { useForm, Controller } from "react-hook-form";
 import { useEmployeeProvider } from "../infra/hooks/use-employee-provider";
 import SearchInput from "../components/search-input";
 import EmployeeTable from "../components/employee-table";
 import Header from "../components/header";
 import { QueryProvider } from "../infra/react-query";
+import { styles } from "./styles";
+import STIRNGS from "./strings";
 
 const App: React.FC = () => {
   return (
@@ -39,16 +36,15 @@ const AppContent: React.FC = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Header initials="GS" notifications={2} />
+      <Header initials={STIRNGS.INITIALS} notifications={2} />
+      <View style={styles.space} />
+      <Text style={styles.label}>{STIRNGS.LABEL}</Text>
       <View style={styles.space} />
       <Controller
         control={control}
         name="search"
         render={({ field: { onChange } }) => (
-          <SearchInput
-            onSearch={onChange}
-            placeholder="Pesquisar por Nome, Cargo ou Telefone"
-          />
+          <SearchInput onSearch={onChange} placeholder={STIRNGS.PLACEHOLDER} />
         )}
       />
       <View style={styles.space} />
@@ -60,16 +56,5 @@ const AppContent: React.FC = () => {
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 20,
-    backgroundColor: "#FFFFFF",
-  },
-  space: {
-    marginVertical: 10,
-  },
-});
 
 export default App;
