@@ -25,6 +25,11 @@ export const tokens = {
       fontSize: 16,
       fontWeight: "regular",
     },
+    body: {
+      fontFamily: "Inter_Regular",
+      fontSize: 12,
+      fontWeight: "regular",
+    },
   },
   spacing: {
     Xxs: 2,

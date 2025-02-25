@@ -43,12 +43,13 @@ export const styles = StyleSheet.create({
     borderBottomColor: tokens.colors.gray05,
   },
   label: {
-    fontFamily: tokens.typography.h2.fontFamily,
-    fontSize: tokens.typography.h2.fontSize,
+    fontFamily: tokens.typography.body.fontFamily,
+    fontSize: tokens.typography.body.fontSize,
+    fontWeight: "bold",
   },
   value: {
-    fontFamily: tokens.typography.h3.fontFamily,
-    fontWeight: tokens.typography.h3.fontWeight,
+    fontFamily: tokens.typography.body.fontFamily,
+    fontWeight: tokens.typography.body.fontWeight,
     textAlign: "right",
   },
   space: {
