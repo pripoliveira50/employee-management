@@ -30,14 +30,14 @@ export const styles = StyleSheet.create({
     borderTopColor: "#ccc",
   },
   infoContainer: {
-    flexDirection: "column", // Coloca cada item em uma linha separada
-    gap: 5, // Espaçamento entre as linhas
+    flexDirection: "column",
+    gap: 5,
   },
   infoRow: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    paddingVertical: 2, // Evita que os itens fiquem grudados
+    paddingVertical: 2,
     borderBottomWidth: 1,
     borderBottomColor: "#eee",
   },
@@ -50,6 +50,6 @@ export const styles = StyleSheet.create({
     textAlign: "right",
   },
   space: {
-    marginLeft: 30,
+    marginLeft: 40,
   },
 });
