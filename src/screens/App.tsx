@@ -1,10 +1,10 @@
 import React from "react";
 import { SafeAreaView, ActivityIndicator, View, Text } from "react-native";
 import { useForm, Controller } from "react-hook-form";
-import { useEmployeeProvider } from "../infra/hooks/use-employee-provider";
-import SearchInput from "../components/search-input";
-import EmployeeTable from "../components/employee-table";
-import Header from "../components/header";
+import { useEmployeeProvider } from "@infra/hooks/use-employee-provider";
+import SearchInput from "@components/search-input";
+import EmployeeTable from "@components/employee-table";
+import Header from "@components/header";
 import { QueryProvider } from "../infra/react-query";
 import { styles } from "./styles";
 import STIRNGS from "./strings";

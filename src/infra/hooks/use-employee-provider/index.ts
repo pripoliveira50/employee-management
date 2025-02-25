@@ -1,9 +1,9 @@
 import { useCallback } from "react";
 import { useQuery, UseQueryOptions } from "@tanstack/react-query";
 
-import { EmployeeDataProp } from "../../react-query/model";
-import { keyFetchEmployees } from "../../react-query/keys";
-import api from "../../axios";
+import { EmployeeDataProp } from "@infra/react-query/model";
+import { keyFetchEmployees } from "@infra/react-query/keys";
+import api from "@infra/axios";
 
 export const useEmployeeProvider = () => {
   const fetchEmployees = useCallback(async (): Promise<EmployeeDataProp[]> => {

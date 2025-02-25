@@ -29,5 +29,16 @@
   "resolutions": {
     "@tanstack/react-query": "^4.32.6"
   },
-  "private": true
+  "metro": {
+    "resolver": {
+      "sourceExts": [
+        "ts",
+        "tsx",
+        "js",
+        "jsx",
+        "json"
+      ]
+    },
+    "private": true
+  }
 }
