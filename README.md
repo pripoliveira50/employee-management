@@ -12,11 +12,11 @@ O **Employee Management** é um aplicativo mobile desenvolvido em **React Native
 - **Jest** (para testes unitários)
 - **Testing Library**
 - **TanStack Query (React Query)**
-- **React hook form**
+- **React Hook Form**
 
 ## Estrutura de Pastas
 
-```
+```bash
 .
 ├── android/                 # Projeto Android (Expo Managed)
 ├── ios/                     # Projeto iOS (Expo Managed)
@@ -33,6 +33,50 @@ O **Employee Management** é um aplicativo mobile desenvolvido em **React Native
 ├── package.json             # Dependências do projeto
 └── README.md                # Documentação do projeto
 ```
+
+## Decisões do Projeto
+
+### 🏗 **Estrutura de Pastas**
+
+A organização das pastas foi pensada para garantir **modularidade** e **reutilização de código**, separando componentes reutilizáveis, telas, infraestrutura, tokens globais e utilitários. Além disso, a pasta `test/` foi mantida na raiz do projeto para centralizar a configuração dos testes e evitar arquivos dispersos dentro de `src/`.
+
+- **`components/`**: Armazena componentes reutilizáveis, facilitando a composição da interface.
+- **`global/tokens/`**: Guarda tokens de design para padronização visual do app.
+- **`infra/`**: Contém configurações e integrações essenciais do projeto.
+- **`screens/`**: Estrutura modular para organização das telas do aplicativo.
+- **`utils/`**: Funções auxiliares que evitam código duplicado.
+
+Essa estrutura modular melhora a **escalabilidade** e facilita a **manutenção** do código.
+
+### 🚀 **Escolha das Tecnologias**
+
+O projeto utiliza **React Native 76** e **Expo** para um desenvolvimento mais ágil e compatível com múltiplas plataformas, reduzindo a necessidade de configuração nativa complexa.
+
+#### **Principais tecnologias e suas justificativas:**
+
+- **Expo**: Simplifica a configuração, deploy e execução em dispositivos reais.
+- **TypeScript**: Melhora a segurança e manutenção do código.
+- **Jest + Testing Library**: Garante testes confiáveis e acessíveis.
+- **React Query**: Gerencia estado assíncrono, otimizando cache e sincronização de dados.
+- **React Hook Form**: Permite formulários mais performáticos e flexíveis.
+
+### ✅ **Configuração de Testes**
+
+Os testes são uma parte essencial do projeto, garantindo que os componentes e funcionalidades funcionem conforme esperado. A escolha de **Jest** e **Testing Library** foi baseada em:
+
+- Facilidade de integração com React Native.
+- Simulação de interações reais dos usuários.
+- Testes acessíveis e legíveis, usando `getByText` e `fireEvent`.
+
+A pasta `test/` foi mantida na raiz para manter a configuração centralizada.
+
+### 🛠 **Ferramentas e Configurações**
+
+O projeto conta com arquivos de configuração essenciais para um ambiente bem estruturado:
+
+- **`jest.config.ts`**: Ajusta o Jest para compatibilidade com React Native e Expo.
+- **`metro.config.js`**: Customiza o Metro Bundler para melhor performance.
+- **`tsconfig.json`**: Define regras do TypeScript para melhor tipagem e segurança.
 
 ## **Pré-requisitos**
 
