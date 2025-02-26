@@ -1,50 +1,93 @@
-# Welcome to your Expo app 👋
+# Employee Management
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Sobre o Projeto
 
-## Get started
+O **Employee Management** é um aplicativo mobile desenvolvido em **React Native** com **Expo**, projetado para facilitar o gerenciamento de funcionários em uma organização. Ele permite visualizar, buscar e organizar informações sobre os colaboradores de forma eficiente.
 
-1. Install dependencies
+## Tecnologias Utilizadas
 
-   ```bash
-   npm install
-   ```
+- **React Native 76**
+- **Expo**
+- **TypeScript**
+- **Jest** (para testes unitários)
+- **Testing Library**
+- **TanStack Query (React Query)**
+- **React hook form**
 
-2. Start the app
+## Estrutura de Pastas
 
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+.
+├── android/                 # Projeto Android (Expo Managed)
+├── ios/                     # Projeto iOS (Expo Managed)
+├── src/                     # Código-fonte principal
+│   ├── components/          # Componentes reutilizáveis
+│   ├── global/tokens/       # Tokens e estilos globais
+│   ├── infra/               # Infraestrutura do projeto
+│   ├── screens/             # Telas do aplicativo
+│   ├── utils/               # Funções utilitárias
+├── test/                    # Configuração de testes
+├── jest.config.ts           # Configuração do Jest
+├── tsconfig.json            # Configuração do TypeScript
+├── metro.config.js          # Configuração do Metro bundler
+├── package.json             # Dependências do projeto
+└── README.md                # Documentação do projeto
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## **Pré-requisitos**
 
-## Learn more
+Antes de iniciar, certifique-se de ter instalado:
 
-To learn more about developing your project with Expo, look at the following resources:
+- [Node.js](https://nodejs.org/) (recomendado: v18+)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/):
+  ```sh
+  npm install -g expo-cli
+  ```
+- [Yarn](https://yarnpkg.com/) (opcional, se preferir Yarn ao invés de npm)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## **Como rodar o projeto**
 
-## Join the community
+1. **Clone o repositório:**
 
-Join our community of developers creating universal apps.
+   ```sh
+   git clone https://github.com/pripoliveira50/employee-management.git
+   cd employee-management
+   ```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+2. **Instale as dependências:**
+
+   ```sh
+   yarn install
+   ```
+
+3. **Inicie o Expo:**
+
+   ```sh
+   yarn start
+   ```
+
+4. **Execute no emulador ou dispositivo físico:**
+   - Para **Android**:
+     ```sh
+     yarn android
+     ```
+   - Para **iOS** (no macOS):
+     ```sh
+     yarn ios
+     ```
+
+## **Rodando os Testes**
+
+Para executar os testes unitários com **Jest**, use:
+
+```sh
+yarn test
+```
+
+## **Licença**
+
+Este projeto está sob a licença MIT - veja o arquivo **LICENSE** para mais detalhes.
+
+---
+
+Feito com ❤️ por [Priscila Oliveira](https://github.com/pripoliveira50/)
