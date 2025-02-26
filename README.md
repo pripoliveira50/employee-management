@@ -128,6 +128,12 @@ Para executar os testes unitários com **Jest**, use:
 yarn test
 ```
 
+## **Interface**
+
+<p align="center">
+<img src="/.github/assets/app.gif" width="320"/>
+</p>
+
 ## **Licença**
 
 Este projeto está sob a licença MIT - veja o arquivo **LICENSE** para mais detalhes.
