@@ -131,7 +131,7 @@ yarn test
 ## **Interface**
 
 <p align="center">
-<img src="/.github/assets/app.gif" width="320"/>
+<img src="./.github/assets/app.gif" width="320"/>
 </p>
 
 ## **Licença**
